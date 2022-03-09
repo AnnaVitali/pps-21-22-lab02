@@ -25,6 +25,8 @@ object TaskFunctions extends App:
   def p3(x: Int)(y: Int)(z: Int): Boolean = x <= y && y <= z
   def p4(x: Int, y: Int, z: Int): Boolean = x <= y && y <= z
 
+  def compose(f: Int => Int, g: Int => Int): Int => Int = x=> f(g(x))
+
 
 
 

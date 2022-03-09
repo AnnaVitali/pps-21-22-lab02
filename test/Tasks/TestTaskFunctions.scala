@@ -1,6 +1,6 @@
 package Tasks
 
-import Tasks.TaskFunctions.{empty, neg, negAsFunctionLiteral, negAsMethod, p1, p2, p4, parityAsFunctionLiteral, parityAsMethod}
+import Tasks.TaskFunctions.{compose, empty, neg, negAsFunctionLiteral, negAsMethod, p1, p2, p4, parityAsFunctionLiteral, parityAsMethod}
 import org.junit.jupiter.api.Assertions.{assertEquals, assertFalse, assertTrue}
 import org.junit.jupiter.api.Test
 import u02.BTrees.Tree.{Branch, Leaf, count, find, size}
@@ -64,6 +64,14 @@ class TestTaskFunctions {
     val secondElement: Int = 2
     val thirdElement: Int = 3
     assertTrue(p1(firstElement)(secondElement)(thirdElement))
+  }
+
+  @Test def testfunctionCompose(): Unit = {
+    val f: Int => Int = _ - 1
+    val g: Int => Int = _ * 2
+    val x: Int = 5
+    val compositionRsult: Int = 9;
+    assertEquals(compose(f,g)(x), compositionRsult)
   }
 
 

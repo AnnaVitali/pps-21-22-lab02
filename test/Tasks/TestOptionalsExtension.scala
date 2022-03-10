@@ -12,31 +12,31 @@ class TestOptionalsExtension {
     assertEquals(Option.filter(optional)(_ > 2), Option.Some(5))
   }
 
-  @Test def testFilterNone: Unit = {
+  @Test def testFilterReturnNone: Unit = {
     val optional: Option[Int] = Option.Some(5)
 
     assertEquals(Option.filter(optional)(_ > 8) , Option.None())
   }
 
-  @Test def testFilterEmpty: Unit = {
+  @Test def testFilterIsEmpty: Unit = {
     val optional: Option[Int] = Option.None()
 
     assertEquals(Option.filter(optional)(_ > 2) , Option.None())
   }
 
-  @Test def testMapSome: Unit = {
+  @Test def testMapReturnSome: Unit = {
     val optional: Option[Int] = Option.Some(5)
 
     assertEquals(Option.map(optional)(_ > 2), Option.Some(true))
   }
 
-  @Test def testMapEmpty: Unit = {
+  @Test def testMapIsEmpty: Unit = {
     val optional: Option[Int] = Option.None()
 
     assertEquals(Option.map(optional)(_ > 2) , Option.None())
   }
 
-  @Test def testMap2Some: Unit = {
+  @Test def testMap2ReturnSome: Unit = {
     val optional1: Option[Int] = Option.Some(5)
     val optional2: Option[Boolean] = Option.Some(true)
 

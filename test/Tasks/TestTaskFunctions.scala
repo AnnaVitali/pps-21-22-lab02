@@ -1,6 +1,8 @@
 package Tasks
 
-import Tasks.TaskFunctions.{compose, empty, neg, negAsFunctionLiteral, negAsMethod, p1, p2, p4, parityAsFunctionLiteral, parityAsMethod}
+import Tasks.Es1.{empty, neg, negAsFunctionLiteral, negAsMethod, parityAsFunctionLiteral, parityAsMethod}
+import Tasks.Es2.{p1, p2, p4}
+import Tasks.Es3.{compose}
 import org.junit.jupiter.api.Assertions.{assertEquals, assertFalse, assertTrue}
 import org.junit.jupiter.api.Test
 import u02.BTrees.Tree.{Branch, Leaf, count, find, size}

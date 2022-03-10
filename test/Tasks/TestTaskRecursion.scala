@@ -1,6 +1,6 @@
 package Tasks
 
-import Tasks.TaskRecursion.fib
+import Tasks.Es4.fib
 import org.junit.jupiter.api.Test
 import org.junit.jupiter.api.Assertions.{assertEquals, assertFalse, assertTrue}
 

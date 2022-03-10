@@ -1,6 +1,6 @@
 package Tasks
 
-import Tasks.ShapeModules.Shape
+import Tasks.Es5.Shape
 import org.junit.jupiter.api.Assertions.{assertEquals, assertFalse, assertTrue}
 import org.junit.jupiter.api.Test
 
